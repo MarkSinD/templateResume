@@ -1,0 +1,27 @@
+{
+  "include": [
+    "src/**/*",
+    "./bin/start.js"
+  ],
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": [
+      "dom",
+      "es2020"
+    ],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "jsx": "react",
+    "rootDir": "./src",
+    "paths": {
+      "@": ["./src/*"]
+    }
+  },
+}
+
