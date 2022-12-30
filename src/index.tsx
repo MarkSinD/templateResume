@@ -6,10 +6,13 @@ import './i18n/index';
 import {snackbarProviderProps} from "./pages/harness/snackbar";
 import {store} from "./redux/store";
 import {App} from "./App";
+import CssBaseline from "@mui/material/CssBaseline";
+
 
 ReactDOM.render(
   <Provider store={store}>
     <SnackbarProvider {...snackbarProviderProps}>
+      <CssBaseline/>
       <App/>
     </SnackbarProvider>
   </Provider>,

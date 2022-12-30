@@ -4,20 +4,17 @@ import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import {Avatar, Box, Typography} from '@mui/material'
 import {styled} from "@mui/material/styles";
-import {useTranslation} from "react-i18next";
 import {SwitchModeButton} from "./SwitchModeButton";
 import Logo from '../../assets/logo.png';
 
-const HeaderWrapper = styled(Card)(({theme}) => ({
+const HeaderWrapper = styled(Card)(() => ({
   position: "sticky",
   top: 0,
   zIndex: 1399,
-  width: '100%',
-  marginBottom: theme.spacing(2),
+  width: '100%'
 }));
 
 export const Header = memo(() => {
-  const {t} = useTranslation(['mainPage'])
   return (
     <HeaderWrapper>
       <CardHeader
@@ -27,7 +24,7 @@ export const Header = memo(() => {
             <SwitchModeButton/>
           </Box>
         }
-        title={<Typography variant={"h1"}>{t("titleLogo")}</Typography>}
+        title={<Typography variant={"h1"}>{("titleLogo")}</Typography>}
       />
     </HeaderWrapper>
   );
