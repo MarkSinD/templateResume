@@ -40,6 +40,16 @@ export const defaultTheme = (mode: PaletteMode) => {
           variant: 'standard',
         },
       },
+      MuiSlider: {
+        defaultProps: {
+          disabled: true
+        },
+        styleOverrides: {
+          thumb :{
+            display: "none"
+          }
+        }
+      }
     },
     spacing: 4,
     shape: {
